@@ -1,0 +1,30 @@
+{
+  "encoder": "vinai/bertweet-base",
+  "encoding": "pair",
+  "primary_field": "comment_text",
+  "secondary_field": "parent_text",
+  "truncation": "manual_secondary_preferential",
+  "pooling": "mean",
+  "max_length": 128,
+  "primary_max_tokens": 96,
+  "replace_deleted_with_empty": true,
+  "fields": [
+    "comment_text+parent_text"
+  ],
+  "hidden_size": 768,
+  "text_dim": 768,
+  "final_csv": "/Users/derronli/Developer/IBEHS-4H03/Data/Dan annotations5k 04202022/final.csv",
+  "context_csv": "/Users/derronli/Developer/IBEHS-4H03/Data/Dan annotations5k 04202022/fetched_context_data.csv",
+  "num_rows_input": 14898,
+  "num_rows": 14898,
+  "embedding_shape": [
+    14898,
+    768
+  ],
+  "skip_incomplete_rows": false,
+  "empty_primary_rows": 1402,
+  "empty_secondary_rows": 1375,
+  "included_indices_file": "included_indices.npy",
+  "included_indices_are_final_csv_positions": true,
+  "note": "Row j of embeddings.npy aligns with final.csv row included_indices[j]. trainer_multitext subsets final.csv using included_indices.npy when present. Pair encoding allows cross-attention between primary and secondary fields; text_dim equals hidden_size (single pooled vector per row)."
+}

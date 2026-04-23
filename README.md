@@ -1,6 +1,4 @@
-# Stigma Research Submit
-
-This project processes Reddit comment context and trains DCN-style classifiers for stigma prediction using BERTweet embeddings. The scripts cover data filtering, embedding generation, training, cross-validation, and inference.
+# Context-Aware Stigma Detection Model: Comparing Insider vs. Outsider Stigmatizing Language Towards People Who Use Substances
 
 ## Files and usage
 
